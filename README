@@ -11,4 +11,10 @@ Issues:
     * This version has the number to call written into the config file.
       If you want to call several people, fork this and make it your 
       own.
+    * You instigate the call in a different place and way than where
+      you define how the call works. I include echo.php, which simply 
+      takes the variable "message" from the query string and puts it 
+      into the center of a TwiML document.
+    * I use the option for a female voice. Here's why:
+      http://www.cnn.com/2011/10/21/tech/innovation/female-computer-voices/index.html
 
