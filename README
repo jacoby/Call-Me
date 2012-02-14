@@ -1,0 +1,14 @@
+call_me.pl is a script that you use to call a phone via computer.
+
+Issues:
+    * You need a Twilio account, and you probably want to buy a number
+      rather than memorize your eight-digit access code to the sandbox
+      number.
+    * You cannot call just any number. You need to register that number
+      with Twilio before it lets you call them. This makes it a call-me
+      or call-someone-I-know tool rather than a general-purpose tool
+      for calling, which is probably good.
+    * This version has the number to call written into the config file.
+      If you want to call several people, fork this and make it your 
+      own.
+
