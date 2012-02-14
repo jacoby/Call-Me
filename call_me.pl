@@ -28,14 +28,14 @@ if ( length $status < 1 ) {
     }
 
 my $twilio = WWW::Twilio::API->new(
-    AccountSid => $twilio_conf->account_sid ,
-    AuthToken  => $twilio_conf->auth_token ,
+    AccountSid => $twilio_conf->{ account_sid } ,
+    AuthToken  => $twilio_conf->{ auth_token } ,
     ) ;
 
-my $url = $twilio_conf->url . uri_escape( $status ) ;
+my $url = $twilio_conf->{ url } . uri_escape( $status ) ;
 
-my $from     = $twilio_conf->from ;
-my $to       = $twilio_conf->to ;
+my $from     = $twilio_conf->{ from } ;
+my $to       = $twilio_conf->{ to } ;
 my $response = $twilio->POST(
     'Calls',
     From => $from,
